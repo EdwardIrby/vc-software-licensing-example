@@ -28,14 +28,13 @@ app.post('/', async (req, res) => {
         'Content-Type': 'application/json',
       },
     })  
-    const status = dwnRes.status 
-    if(status === 200) {
-      res.status(200).send('OK')
+    const body = await  dwnRes.json() 
+    if(dwnRes.status === 200) {
+      res.status(200).send(body) // should be { verified: true}
     }  else {
-      res.status(status).send('Access Denied')
+      res.status(dwnRes.status).send('Access Denied')
     }
   }
-
 })
 
 app.listen(port, () => {
