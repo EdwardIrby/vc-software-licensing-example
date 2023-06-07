@@ -1,0 +1,30 @@
+{
+  "name": "client",
+  "private": true,
+  "engines": {
+    "node": ">= v18.15.0"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "bunx web-dev-server",
+    "test": "bunx web-test-runner",
+    "test:watch": "bunx web-test-runner --watch"
+  },
+  "browserslist": [
+    "> 2%"
+  ],
+  "source": "src/index.html",
+  "types": "./dist/index.d.ts",
+  "dependencies": {
+    "jose": "4.14.4",
+    "plaited": "3.1.0"
+  },
+  "devDependencies": {
+    "@plaited/rite": "3.1.0",
+    "@web/dev-server": "0.2.1",
+    "@web/dev-server-esbuild": "0.4.1",
+    "@web/test-runner": "0.16.1",
+    "@web/test-runner-core": "0.11.1",
+    "@web/test-runner-playwright": "0.10.0"
+  }
+}
