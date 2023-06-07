@@ -11,4 +11,5 @@ export default {
   appIndex: 'index.html',
   watch: true,
   open: true,
+  port: 3000,
 }

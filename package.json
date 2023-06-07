@@ -5,7 +5,8 @@
   ],
   "scripts": {
     "lint": "eslint . --ext .ts,.tsx,.js,.cjs",
-    "lint:fix": "bun lint --fix --quiet"
+    "lint:fix": "bun lint --fix --quiet",
+    "start": "npm run start --workspaces --if-present"
   },
   "browserslist": [
     "> 2%"

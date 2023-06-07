@@ -6,9 +6,7 @@
   },
   "type": "module",
   "scripts": {
-    "start": "bunx web-dev-server",
-    "test": "bunx web-test-runner",
-    "test:watch": "bunx web-test-runner --watch"
+    "start": "bunx web-dev-server"
   },
   "browserslist": [
     "> 2%"

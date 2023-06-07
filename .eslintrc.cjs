@@ -67,9 +67,6 @@ module.exports = {
     'func-names': [ 'error', 'always', {
       generators: 'never',
     } ],
-    'no-console': [ 'error', {
-      allow: [ 'warn', 'error' ],
-    } ],
     'class-methods-use-this': [ 'error', {
       exceptMethods: [ 'plait' ],
     } ],
